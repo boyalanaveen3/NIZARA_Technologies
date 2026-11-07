@@ -41,6 +41,7 @@
       border-bottom: 1px solid var(--line);
     }
     .brand { display: inline-flex; align-items: center; gap: 11px; font-size: 15px; font-weight: 800; letter-spacing: -.045em; }
+    .brand-logo { display: block; width: 178px; height: auto; }
     .brand-mark {
       display: grid;
       width: 34px;
@@ -159,7 +160,7 @@
     footer { padding-block: 25px; background: var(--ink); color: white; }
     .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
     footer .brand { font-size: 13px; }
-    footer .brand-mark { width: 28px; height: 28px; background: var(--green); color: var(--ink); font-size: 14px; }
+    footer .brand-logo { width: 160px; }
     .copyright { color: #aeb3ac; font-size: 10px; }
     .back-top { color: var(--green); font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
 
@@ -221,8 +222,7 @@
 <body>
   <header class="topbar wrap">
     <a class="brand" href="#home" aria-label="NIZARA Technologies home">
-      <span class="brand-mark">N</span>
-      <span>NIZARA<small>Technologies</small></span>
+      <img class="brand-logo" src="images/nizara-logo.jpg" alt="">
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu <span aria-hidden="true">+</span></button>
     <nav class="nav" id="primary-nav" aria-label="Main navigation">
@@ -359,7 +359,7 @@
 
   <footer>
     <div class="footer-inner wrap">
-      <a class="brand" href="#home"><span class="brand-mark">N</span><span>NIZARA<small>Technologies</small></span></a>
+      <a class="brand" href="#home" aria-label="NIZARA Technologies home"><img class="brand-logo" src="images/nizara-logo.jpg" alt=""></a>
       <span class="copyright">© <span id="year"></span> NIZARA Technologies. Made with intention.</span>
       <a class="back-top" href="#home">Back to top ↑</a>
     </div>
