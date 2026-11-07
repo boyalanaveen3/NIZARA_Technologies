@@ -166,18 +166,8 @@
 
     @media (max-width: 800px) {
       .wrap { width: min(100% - 40px, 620px); }
-      .hero { grid-template-columns: 1fr; min-height: auto; padding-block: 72px 58px; gap: 42px; }
-      .hero-art { min-height: 390px; }
-      .section { padding-block: 82px; }
-      .services-grid { grid-template-columns: 1fr 1fr; }
-      .service-card:last-child { grid-column: span 2; }
-      .statement-inner { grid-template-columns: 1fr; gap: 25px; padding-block: 75px; }
-      .statement-mark { margin-top: 0; }
-      .founder-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 560px) {
-      .wrap { width: calc(100% - 36px); }
       .topbar { min-height: 72px; }
+      .brand-logo { width: 160px; }
       .menu-toggle { display: block; }
       .nav {
         position: absolute;
@@ -194,6 +184,19 @@
       .nav.is-open { display: flex; flex-direction: column; }
       .nav a { padding: 13px 0; }
       .nav .nav-cta { margin-top: 6px; padding: 13px 16px; text-align: center; }
+      .hero { grid-template-columns: 1fr; min-height: auto; padding-block: 72px 58px; gap: 42px; }
+      .hero-art { min-height: 390px; }
+      .section { padding-block: 82px; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .service-card:last-child { grid-column: span 2; }
+      .statement-inner { grid-template-columns: 1fr; gap: 25px; padding-block: 75px; }
+      .statement-mark { margin-top: 0; }
+      .founder-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .wrap { width: calc(100% - 36px); }
+      .brand-logo { width: 148px; }
+      footer .brand-logo { width: 140px; }
       h1 { font-size: clamp(54px, 15vw, 80px); }
       .hero { padding-top: 58px; }
       .hero-art { min-height: 330px; }
