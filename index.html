@@ -211,7 +211,8 @@
       .service-card:last-child { grid-column: auto; }
       .service-card { min-height: 210px; }
       .service-top { margin-bottom: 45px; }
-      .founder-photo { min-height: 270px; }
+      .founder-photo { min-height: 0; aspect-ratio: auto; }
+      .founder-photo img { position: static; height: auto; object-fit: contain; }
       .founder-info { min-height: 205px; }
       .contact-inner { align-items: flex-start; flex-direction: column; }
       .footer-inner { align-items: flex-start; flex-wrap: wrap; }
